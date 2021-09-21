@@ -1,17 +1,18 @@
-#include "DigiKeyboard.h"
+#include "DigiKeyboardPtBr.h"
 void setup() {
   //empty
 }
 void loop() {
-  DigiKeyboard.delay(2000);
-  DigiKeyboard.sendKeyStroke(0);
-  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
-  DigiKeyboard.delay(600);
-  DigiKeyboard.print("powershell.exe");
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(8000);
-  DigiKeyboard.print("ping google.com.br -t");
-  DigiKeyboard.delay(200);
-  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboardPtBr.delay(2000);
+  DigiKeyboardPtBr.sendKeyStroke(0);
+  DigiKeyboardPtBr.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  DigiKeyboardPtBr.delay(600);
+  DigiKeyboardPtBr.print("chrome.exe");
+  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
+  DigiKeyboardPtBr.delay(1000);
+  DigiKeyboardPtBr.print("https://fakeupdate.net/win10/");
+  DigiKeyboardPtBr.sendKeyStroke(KEY_ENTER);
+  DigiKeyboardPtBr.delay(100);
+  DigiKeyboardPtBr.sendKeyStroke(KEY_F11);
   for(;;){ /*empty*/ }
 }
